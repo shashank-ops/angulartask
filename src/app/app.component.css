@@ -1,0 +1,13 @@
+.card{
+    padding:10px;
+    height: 400px;
+}
+.card h1{font-size:26px;color: brown;}
+.card h1 span{color:chartreuse;margin-right: 4px;}
+.card p{text-align: left;}
+.card .post{
+    height: 80%;
+}
+.card .author{
+    height: 20%;
+}

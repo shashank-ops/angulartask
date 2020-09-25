@@ -1,0 +1,38 @@
+<div class="navbar-fixed">
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo" style="margin-left: 8px;">assignment</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        
+      </ul>
+    </div>
+  </nav>
+</div>
+
+
+
+<div class="container">
+<div class="row">
+  <div *ngFor='let post of data;let author of names' class="col-sm-4">
+    <div class="card">
+     <div class="post">
+      <h1><span>{{post.userId}}.</span>{{post.title}}</h1>
+      <p>{{post.body}}</p>
+     </div>
+      <div class="author">
+        <b style="float: right;">- {{author.name}}</b>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+<router-outlet></router-outlet>
